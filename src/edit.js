@@ -11,7 +11,7 @@ export default function Edit( { attributes, setAttributes, clientId } ) {
 	];
 
 	return (
-		<div { ...blockProps }>
+		<div>
 			<InnerBlocks allowedBlocks={ ALLOWED_BLOCKS } />
 		</div>
 	);

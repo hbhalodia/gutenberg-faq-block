@@ -10,25 +10,13 @@
   "category": "widgets",
   "icon": "insert",
   "attributes": {
-    "faqContent": {
-      "type": "array",
-      "default": [],
-      "source": "query",
-      "selector": ".faq-wrapper",
-      "query": {
-        "question": {
-          "type": "string",
-          "source": "html",
-          "selector": ".faq-question",
-          "default": ""
-        },
-        "answer": {
-          "type": "string",
-          "source": "html",
-          "selector": ".faq-answer",
-          "default": ""
-        }
-      }
+    "question": {
+      "type": "string",
+      "default": ""
+    },
+    "answer": {
+      "type": "string",
+      "default": ""
     }
   },
   "description": "Gutenberg FAQ block Child",
