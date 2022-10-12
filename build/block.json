@@ -3,10 +3,10 @@
   "apiVersion": 2,
   "name": "create-block/gutenberg-faq-block",
   "version": "0.1.0",
-  "title": "Gutenberg Faq Block",
+  "title": "Gutenberg FaQ Block Parent",
   "category": "widgets",
-  "icon": "smiley",
-  "description": "Example static block scaffolded with Create Block tool.",
+  "icon": "cog",
+  "description": "Gutenberg FAQ block",
   "supports": {
     "html": false
   },
