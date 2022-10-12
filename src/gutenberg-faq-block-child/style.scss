@@ -4,8 +4,10 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
- .faq-wrapper {
-	margin: 2%;
+
+.faq-wrapper {
+	margin: 2% 0;
+	border: 1px dotted black;
 }
 .faq-question {
 	background-color: #eee;
@@ -19,15 +21,15 @@
 	transition: 0.4s;
 }
 
-.faq-question:after {
+.faq-question:before {
 	content: '\002B';
 	color: #777;
 	font-weight: bold;
-	float: right;
-	margin-left: 5px;
+	float: left;
+	margin-right: 5px;
 }
 
-.active:after {
+.active:before {
 	content: "\2212";
 }
 

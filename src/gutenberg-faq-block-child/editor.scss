@@ -5,7 +5,7 @@
  * Replace them with your own styles or remove the file completely.
  */
  .faq-wrapper {
-	margin: 2%;
+	margin: 2% 0;
 }
 .faq-question {
 	background-color: #eee;
@@ -19,12 +19,12 @@
 	transition: 0.4s;
 }
 
-.faq-question:after {
+.faq-question:before {
 	content: '\2212';
 	color: #777;
 	font-weight: bold;
-	float: right;
-	margin-left: 5px;
+	float: left;
+	margin-right: 5px;
 }
 
 
