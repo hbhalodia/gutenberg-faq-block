@@ -1,12 +1,13 @@
 import { __ } from '@wordpress/i18n';
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import { useSelect } from '@wordpress/data';
 import './editor.scss';
 
-export default function Edit( { attributes, setAttributes } ) {
+export default function Edit( { attributes, setAttributes, clientId } ) {
 
 	const blockProps = useBlockProps();
 	const ALLOWED_BLOCKS = [
-		'core/paragraph',
+		'create-block/gutenberg-faq-block-child',
 	];
 
 	return (

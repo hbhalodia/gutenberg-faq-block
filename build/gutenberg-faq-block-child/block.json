@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/gutenberg-faq-block-child",
+  "version": "0.1.0",
+  "title": "Gutenberg FaQ Block Child",
+  "parent": [
+    "create-block/gutenberg-faq-block"
+  ],
+  "category": "widgets",
+  "icon": "insert",
+  "attributes": {
+    "faqContent": {
+      "type": "array",
+      "default": [],
+      "source": "query",
+      "selector": ".faq-wrapper",
+      "query": {
+        "question": {
+          "type": "string",
+          "source": "html",
+          "selector": ".faq-question",
+          "default": ""
+        },
+        "answer": {
+          "type": "string",
+          "source": "html",
+          "selector": ".faq-answer",
+          "default": ""
+        }
+      }
+    }
+  },
+  "description": "Gutenberg FAQ block Child",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "gutenberg-faq-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

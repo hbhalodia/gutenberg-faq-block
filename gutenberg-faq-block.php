@@ -22,5 +22,6 @@
  */
 function create_block_gutenberg_faq_block_block_init() {
 	register_block_type( __DIR__ . '/build' );
+	register_block_type( __DIR__ . '/build/gutenberg-faq-block-child' );
 }
 add_action( 'init', 'create_block_gutenberg_faq_block_block_init' );

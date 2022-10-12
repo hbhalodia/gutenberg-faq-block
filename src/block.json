@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Gutenberg FaQ Block Parent",
 	"category": "widgets",
-	"icon": "cog",
+	"icon": "welcome-add-page",
 	"description": "Gutenberg FAQ block",
 	"supports": {
 		"html": false
