@@ -19,6 +19,15 @@
 	transition: 0.4s;
 }
 
+.faq-question:after {
+	content: '\2212';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+
 .faq-answer {
 	padding: 18px;
 	background-color: white;
