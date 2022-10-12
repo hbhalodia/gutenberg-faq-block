@@ -1,10 +1,9 @@
-import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import { InnerBlocks } from '@wordpress/block-editor';
 
 export default function save() {
-	const blockProps = useBlockProps.save();
 
 	return (
-		<div>
+		<div className='faq-parent-wrapper'>
 			<InnerBlocks.Content />
 		</div>
 	);

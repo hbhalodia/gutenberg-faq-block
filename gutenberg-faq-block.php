@@ -13,6 +13,9 @@
  * @package           create-block
  */
 
+define( 'FAQ_BLOCK_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
+define( 'FAQ_BLOCK_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
+
 /**
  * Registers the block using the metadata loaded from the `block.json` file.
  * Behind the scenes, it registers also all assets so they can be enqueued
@@ -25,3 +28,14 @@ function create_block_gutenberg_faq_block_block_init() {
 	register_block_type( __DIR__ . '/build/gutenberg-faq-block-child' );
 }
 add_action( 'init', 'create_block_gutenberg_faq_block_block_init' );
+
+function enqueue_scripts() {
+	wp_enqueue_script(
+		'faq-js',
+		FAQ_BLOCK_URL . '/src/gutenberg-faq-block-child/faq.js',
+		array(),
+		filemtime( FAQ_BLOCK_PATH . '/src/gutenberg-faq-block-child/faq.js' ),
+		true
+	);
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );

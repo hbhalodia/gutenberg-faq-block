@@ -1,7 +1,6 @@
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { RichText } from '@wordpress/block-editor';
 
 export default function save( { attributes } ) {
-	const blockProps = useBlockProps.save();
 	const { question, answer } = attributes;
 
 	return (

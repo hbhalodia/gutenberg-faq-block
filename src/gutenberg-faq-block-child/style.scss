@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+ .faq-wrapper {
+	margin: 2%;
+}
+.faq-question {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.faq-answer {
+	padding: 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+}
+
+.active, .faq-question:hover {
+	background-color: #ccc;
+}
